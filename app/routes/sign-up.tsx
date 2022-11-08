@@ -19,7 +19,7 @@ export default function SignUpForm() {
   const { isLoaded, signUp } = useSignUp();
   const fetcher = useFetcher();
 
-  const handleSignUp = async (event) => {
+  const handleSignUp = async (event: any) => {
     const formData = new FormData(event.target);
     const emailAddress = formData.get("email");
     const password = formData.get("password");
